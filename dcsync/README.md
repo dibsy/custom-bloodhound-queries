@@ -38,3 +38,4 @@ MATCH (p)-[:DCSync|AllExtendedRights|GenericAll]->(:Domain)
 MATCH y=(b)-[]->(:Domain)<-[]-(p)
 RETURN y
 ```
+<img src="finalquery.png">
