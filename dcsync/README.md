@@ -1,4 +1,4 @@
-### DCsync
+### DCsync Custom Query
 
 The generic inbuilt query for DCSync in Bloodhound Community is
 
