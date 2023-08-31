@@ -31,3 +31,10 @@ MATCH (n)-[:GetChanges]->(:Domain) WITH n
 MATCH y=(n)-[]->(:Domain)
 RETURN y
 ```
+```cypher
+MATCH (b)-[:GetChangesAll]->(:Domain)
+WITH b MATCH (b)-[:GetChanges]->(:Domain)
+MATCH (p)-[:DCSync|AllExtendedRights|GenericAll]->(:Domain)
+MATCH y=(b)-[]->(:Domain)<-[]-(p)
+RETURN y
+```
