@@ -7,3 +7,5 @@ MATCH p=(n)-[b:MemberOf]->(c:Group {samaccountname : "Remote Management Users"})
 ```
 
 If we have an owned principal which is a part of the ```Remote Management Users``` we can get access to the machine. 
+
+<img src="remote-management-users.png">
